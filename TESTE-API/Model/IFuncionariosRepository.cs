@@ -1,4 +1,6 @@
-﻿namespace TESTE_API.Model
+﻿using TESTE_API.Entities;
+
+namespace TESTE_API.Model
 {
     public interface IFuncionariosRepository
     {

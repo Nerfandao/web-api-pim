@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TESTE_API.Entities;
 using TESTE_API.Model;
 using TESTE_API.ViewModel;
 
@@ -19,7 +20,7 @@ namespace TESTE_API.Controllers
 
         public IActionResult Add(FuncionariosViewModel funcionariosView)
         {
-            var funcionarios = new Funcionarios(funcionariosView.id_funcionario, funcionariosView.id_cargo, funcionariosView.nome, funcionariosView.telefone, funcionariosView.data_admissao, funcionariosView.ctps, funcionariosView.salario_bruto, funcionariosView.data_nascimento, funcionariosView.banco, funcionariosView.conta, funcionariosView.cpf, funcionariosView.email, funcionariosView.ativo, funcionariosView.nome_social, funcionariosView.genero, funcionariosView.endereco);
+            var funcionarios = new Funcionarios(funcionariosView.IdFuncionario, funcionariosView.IdCargo, funcionariosView.Nome, funcionariosView.Telefone, funcionariosView.DataAdmissao, funcionariosView.Ctps, funcionariosView.SalarioBruto, funcionariosView.DataNascimento, funcionariosView.Banco, funcionariosView.Conta, funcionariosView.Cpf, funcionariosView.Email, funcionariosView.Ativo, funcionariosView.NomeSocial, funcionariosView.Genero, funcionariosView.Endereco);
             _funcionariosRepository.Add(funcionarios);
 
             return Ok(); 

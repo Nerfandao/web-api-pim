@@ -6,26 +6,26 @@ namespace TESTE_API.ViewModel
 {
     public class FuncionariosViewModel
     {
-        public int id_funcionario { get; set; }
-        public int id_cargo { get; set; }
-        public string nome { get; set; }
-        public string telefone { get; set; }
+        public int IdFuncionario { get; set; }
+        public int IdCargo { get; set; }
+        public string Nome { get; set; }
+        public string Telefone { get; set; }
 
         [JsonConverter(typeof(DateOnlyConverter))]
-        public DateOnly data_admissao { get; set; }
-        public string ctps { get; set; }
-        public float salario_bruto { get; set; }
+        public DateOnly DataAdmissao { get; set; }
+        public string Ctps { get; set; }
+        public decimal SalarioBruto { get; set; }
 
         [JsonConverter(typeof(DateOnlyConverter))]
-        public DateOnly data_nascimento { get; set; }
-        public string banco { get; set; }
-        public string conta { get; set; }
-        public string cpf { get; set; }
-        public string email { get; set; }
-        public bool ativo { get; set; }
-        public string nome_social { get; set; }
-        public string genero { get; set; } 
-        public string endereco { get; set; }
+        public DateOnly DataNascimento { get; set; }
+        public string Banco { get; set; }
+        public string Conta { get; set; }
+        public string Cpf { get; set; }
+        public string Email { get; set; }
+        public bool Ativo { get; set; }
+        public string NomeSocial { get; set; }
+        public string Genero { get; set; } 
+        public string Endereco { get; set; }
     }
 
     public class DateOnlyConverter : JsonConverter<DateOnly>

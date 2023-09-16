@@ -1,4 +1,5 @@
-﻿using TESTE_API.Model;
+﻿using TESTE_API.Entities;
+using TESTE_API.Model;
 
 namespace TESTE_API.Infraestrutura
 {
